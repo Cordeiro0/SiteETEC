@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040;
+    z-index: 3;
+}
+
+nav{
+    margin: 0px 10px;
+    width: 90%;
+}
+
+.ajuste-nav{
+    position: relative;
+    margin-right: 0;
+}
+
+.navbar a{
+    position:  relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    justify-self: flex-end
+}
+
+.navbar a:hover{
+    color: red;
+    text-decoration: dashed red;
+}
+
+.logo{
+    padding: 10px;
+}
+
+.navbar .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navbar .btnLogin-popup:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.footer{
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: #404040;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-control-prev{
+    height: 50%;
+    margin-top: 15%;
+}
+
+.carousel-control-next{
+    height: 50%;
+    margin-top: 15%;
+}
