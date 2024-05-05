@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Parte do Home*/
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -44,6 +44,7 @@ nav{
 
 .logo{
     padding: 10px;
+    cursor: pointer;
 }
 
 .navbar .btnLogin-popup{
@@ -64,6 +65,8 @@ nav{
 .navbar .btnLogin-popup:hover{
     background-color: red;
     color: #fff;
+    border-bottom: 2px solid red;
+    z-index: 15;
 }
 
 .footer{
@@ -85,3 +88,127 @@ nav{
     height: 50%;
     margin-top: 15%;
 }
+/*Fim do Home*/
+
+
+/*Parte do Sobre*/
+.conteiner-sobre{
+   width: auto;
+   height: 200vh;
+   display: flex;
+   margin: 20px solid rgba(0,0,0,0.2);
+   scroll-behavior: auto;
+}
+
+.conteiner-sobre p{
+    text-align: left;
+    font-size: large;
+}
+
+.img-fluid{
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-center{
+    margin-top: 2%;
+}
+
+.segunda-parte{
+    margin-top: 2%;
+}
+
+/*Fim do sobre*/
+
+/*Inicio do Cursos*/
+
+.conteiner{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.conteiner .titulo-cursos{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.conteiner aside{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.list-group-item:hover{
+    transform: scale(110%);
+}
+
+.conteiner-center{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-grow: 1;
+}
+
+.cursos-main{
+    background-color: #707070;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2); 
+}
+
+.cursos-main h3{
+    text-align: left;
+    margin: 2%;
+    color: red;
+    max-width: 180px;
+}
+
+.cursos-main p{
+    margin-left: 5%;
+    font-size: 1.125rem;
+    max-width: 500px;
+}
+
+.conteiner-ano-curso{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    max-width: 500px;
+}
+
+.ano-curso{
+    margin-left: 5%;    
+}
+
+.conteiner-ano-curso{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ano-curso{
+    font-size: 1.125rem;
+    border: none;
+    width: 110%;
+    border-bottom: 2%;
+    border-left: 0;
+    border-right: auto;
+}
+
+.ano-curso:hover{
+    background-color: #fff;
+    color: #404040;
+    transform: scale(110%);
+}
+
+/*Fim do Cursos*/
