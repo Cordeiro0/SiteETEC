@@ -33,26 +33,22 @@
                 <aside>
                     <div class="cursos-aside">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item" id="tituloCursos">Administração</li>
-                            <li class="list-group-item" id="tituloCursos">Desenvolvimeto de Sistemas</li>
-                            <li class="list-group-item" id="tituloCursos">Marketing</li>
-                            <li class="list-group-item" id="tituloCursos">Recursos Humanos</li>
+                            <li class="list-group-item" id="tituloADM" onclick="TrocarTituloCurso()">Administração</li>
+                            <li class="list-group-item" id="tituloDS"  onclick="TrocarTituloCurso()">Desenvolvimeto de Sistemas</li>
+                            <li class="list-group-item" id="tituloMKT" onclick="TrocarTituloCurso()">Marketing</li>
+                            <li class="list-group-item" id="tituloRH"  onclick="TrocarTituloCurso()">Recursos Humanos</li>
                           </ul>
                     </div>
                 </aside>
                 <main>
                     <div class="cursos-main">   
-                        <h3>Descrição do Curso - <p id="cursos-nome-curso"></p></h3>
-                        <p class="desc-curso">
-                            O técnico em administração é o profissional que adota postura ética na execução da rotina administrativa,
-                             na elaboração do planejamento da produção e materiais, recursos humanos, financeiros e mercadológicos.
-                            Ele realiza atividades de controles organizacional e auxilia nos processos de direção utilizando
-                             ferramentas da informática básica. Fomenta ideias e práticas empreendedoras desempenha suas atividades
-                              observando as normas de segurança, saúde e higiene do trabalho, bem como as de preservação ambiental.
+                        <h3>Descrição do Curso - <h3 id="cursos-nome-curso"></h3> </h3>
+                        <p id="desc-curso">
+                            
                         </p>
                         <h3>Matérias do Curso</h3>
                         <div class="conteiner-ano-curso">
-                            <button class="ano-curso" onclick="Teste()">1° Ano</button>
+                            <button class="ano-curso" onclick="">1° Ano</button>
                             <button class="ano-curso">2° Ano</button>
                             <button class="ano-curso">3° Ano</button>
                         </div>
@@ -70,7 +66,31 @@
 
 
 
-    <script src="main.js"></script>
+    <script>
+      function TrocarTituloCurso(){
+          var adm = document.getElementById("tituloADM")
+          adm.addEventListener("click", function(){
+              document.getElementById("cursos-nome-curso").innerHTML = "Administração"
+              document.getElementById("desc-curso").innerHTML = "eu ser administrativo"
+            })
+
+          var ds = document.getElementById("tituloDS")
+          ds.addEventListener("click", function(){
+            document.getElementById("cursos-nome-curso").innerHTML = "Desenvolvimento de Sistemas"
+            document.getElementById("desc-curso").innerHTML = "Eu faço computaria"
+          })
+
+          var mkt = document.getElementById("tituloMKT")
+          mkt.addEventListener("click", function(){
+            document.getElementById("desc-curso").innerHTML = "Eu ser deveras marketeiro(a)"
+          })
+
+          var rh = document.getElementById("tituloRH")
+          rh.addEventListener("click", function(){
+            document.getElementById("desc-curso").innerHTML = "Recursos Humanos? O que é isso? É de comer?"
+          })
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
