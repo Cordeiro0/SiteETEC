@@ -135,6 +135,11 @@ nav{
     padding-top: 2%;
 }
 
+.subtitulo{
+    text-align: center;
+    font-size: 1.125rem;
+}
+
 .conteiner aside{
     width: 30%;
     display: flex;
@@ -162,7 +167,8 @@ nav{
     background-color: #707070;
     color: #fff;
     text-align: left;
-    width: 100%;
+    min-width: 100%;
+    min-height: max-content;
     padding: 10px;
     box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2); 
 }
@@ -176,23 +182,23 @@ nav{
 
 .cursos-nome-curso{
     color: #fff;
+    padding: 5px;
+    text-align: left;
 }
 
 .cursos-main p{
-    margin-left: 5%;
+    margin: 5px;
     font-size: 1.125rem;
+    text-align: left;
     max-width: 500px;
 }
 
-.conteiner-ano-curso{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    max-width: 500px;
+#desc-curso{
+    text-align: justify;
 }
 
-.ano-curso{
-    margin-left: 5%;    
+#materias-curso{
+    text-align: justify;
 }
 
 .conteiner-ano-curso{
@@ -205,17 +211,23 @@ nav{
 .ano-curso{
     font-size: 1.125rem;
     border: none;
+    margin: 5%;
     width: 110%;
+    background-color: #fff;
+    color: #404040;
     border-bottom: 2%;
     border-left: 0;
     border-right: auto;
+    transition: .3s;
 }
 
 .ano-curso:hover{
-    background-color: #fff;
     color: #404040;
+    background-color: #ff0000;
     transform: scale(110%);
+    transition: .3s;
 }
+
 
 /*Fim do Cursos*/
 
@@ -249,7 +261,6 @@ nav{
     margin-left: 1%;
 
 }
-
 
 .conteiner-contato input{
     width: 50%;
