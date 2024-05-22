@@ -145,7 +145,8 @@ nav{
 
 .subtitulo{
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .conteiner aside{
@@ -762,7 +763,6 @@ margin-top: 0px;
   div.gallery {
       width: 90%;
       float: center;
-      margin-bottom: 20%;
   }
 
 }
@@ -783,9 +783,6 @@ margin-top: 0px;
  
 
   @media (max-width: 1111px) {
-    #subtitulo {
-        font-size: 1.5em;
-    }
 
     .cover {
         height: 300px;
@@ -839,6 +836,7 @@ margin-top: 0px;
   .ajuste-nav.open {
       display: flex;
   }
+
 }
 
 #ancora{
@@ -857,5 +855,11 @@ margin-top: 0px;
 @media screen and (max-width: 990px) {
   .imagemeventos{
     width: 90%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 1024px) {
+  #ancora {
+      width: 5%;
   }
 }
