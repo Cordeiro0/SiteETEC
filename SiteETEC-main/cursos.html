@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/cursosicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Cursos | ETEC Humberto Ferrúcio Gazzeta</title>
+  </head>
+  <body>
+
+    
+    <header>
+      <nav class="navbar">
+        <a href="index.html">
+          <img
+            width="140"
+            height="85"
+            src="https://www.etecdenovaodessa.com.br/wp-content/uploads/2023/06/etec-logotipo.svg"
+            class="custom-logo astra-logo-svg"
+            alt="Etec de Nova Odessa"
+            decoding="async"
+            class="logo"
+          />
+        </a><div class="mobile-menu-icon">
+          <button onclick="toggleMenu()">&#9776;</button>
+      </div>
+      <div class="ajuste-nav">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="eventos.html">Eventos</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="contato.html">Contato</a>
+          <a href="entrar.html"><button class="btnLogin-popup">Entrar</button></a>
+      </div>
+      </nav>
+    </header>
+
+    
+    <br>
+    <center>
+    <div id = h_3>
+
+      <main>
+        <div class="conteiner">
+            <h2 class="titulo-cursos">Conheça nossos cursos!</h2>
+            <p class="subtitulo">Nós possuimos os cursos de Administração; Desenvolvimento de Sistemas; Marketing e Recursos Humanos. Descubra mais sobre eles clicando no Painel Lateral</p>
+            <div class="conteiner-center">
+                <aside>
+                    <div class="cursos-aside">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="tituloADM" onclick="TrocarTituloCurso()">Administração</li>
+                            <li class="list-group-item" id="tituloDS"  onclick="TrocarTituloCurso()">Desenvolvimeto de Sistemas</li>
+                            <li class="list-group-item" id="tituloMKT" onclick="TrocarTituloCurso()">Marketing</li>
+                            <li class="list-group-item" id="tituloRH"  onclick="TrocarTituloCurso()">Recursos Humanos</li>
+                          </ul>
+                    </div>
+                </aside>
+                <main>
+                    <div class="cursos-main">   
+                        <h3>Descrição do Curso - <h3 id="cursos-nome-curso"></h3> </h3>
+                        <p id="desc-curso">
+                          Clique no menu lateral para descobrir sobre os cursos
+                        </p>
+                        <h3>Matérias do Curso</h3>
+                        <div class="conteiner-ano-curso">
+                            <button class="ano-curso" id="ano-curso1" onclick="TrocarTituloCurso()">1° Ano</button>
+                            <button class="ano-curso" id="ano-curso2" onclick="TrocarTituloCurso()">2° Ano</button>
+                            <button class="ano-curso" id="ano-curso3" onclick="TrocarTituloCurso()">3° Ano</button>
+                        </div>
+                        <p id="materias-curso"><br></p>
+                    </div>
+                </main>
+            </div>
+            
+        </div>
+    </main>
+
+    <br><br><br><br><br>
+    <div id = "subtitulo">Vestibulinho da ETEC Ferrucio Humberto Gazzetta</div>
+    <br><br><br>
+    <p align = "justify"><font size = "4">A ETEC Ferrucio Humberto Gazzetta realiza um processo seletivo chamado
+       Vestibulinho, que seleciona candidatos para ingressarem nos seus cursos técnicos. As provas serão 
+       realizadas de forma presencial, proporcionando uma avaliação justa e criteriosa dos candidatos.</font></p>
+
+       <br><br>
+
+       <p align = "justify"><font size = "5"><b>Inscrições e Opções de Cursos</b></font></p>
+      
+       <br>
+       
+       <p align = "justify"><font size = "4">Os interessados podem fazer a inscrição pelo site oficial do 
+        Vestibulinho da ETEC: https://www.vestibulinhoetec.com.br. Os candidatos do 1º módulo dos cursos técnicos (presencial e semipresencial) 
+        têm a opção de indicar, como 2ª opção, outro curso ou período na mesma ETEC ou Extensão de ETEC 
+        (Classe Descentralizada) para a qual se inscreveram em 1ª opção, quando essa opção estiver disponível.</font></p>
+
+        <br><br>
+
+       <p align = "justify"><font size = "5"><b>Sistema de Pontuação Acrescida</b></font></p>
+      
+       <br>
+       
+       <p align = "justify"><font size = "4">O Sistema de Pontuação Acrescida foi instituído pelo Decreto 
+        Estadual 49.602, de 13-05-2005, e detalhado na Deliberação Ceeteps 08, de 02-08-2007. Este sistema 
+        adiciona pontos à nota final dos candidatos que se enquadrem em determinados critérios:
+        <br><br>
+        <b>.  3%</b> para candidatos que se declararem afrodescendentes. <br>
+        <b>.  10%</b>para candidatos que tenham cursado integralmente do 5º ao 8º ano (ou do 6º ao 9º ano)
+        do ensino fundamental em instituições públicas. <br>
+        <b>.  13%</b> para candidatos que atendam cumulativamente aos critérios de afrodescendência e escolaridade 
+        pública.</font></p>
+        <br>
+        <p align = "justify"><font size = "4">Afrodescendentes são definidos, conforme o Artigo 5º do Decreto 
+          Estadual 49.602/05, como pretos e pardos, sendo essa classificação feita por autodeclaração quando 
+          necessário.</font></p>
+        <br><br>
+
+        <p align = "justify"><font size = "5"><b>Comprovação de Escolaridade Pública</b></font></p>
+      
+       <br>
+       
+       <p align = "justify"><font size = "4">Os candidatos que utilizarem o benefício de Pontuação Acrescida 
+        por escolaridade pública devem comprovar que cursaram integralmente a 5ª, 6ª, 7ª e 8ª séries 
+        (ou 6º, 7º, 8º e 9º anos) do ensino fundamental em instituições públicas. Durante a matrícula, deve-se 
+        apresentar documentos comprobatórios dessa escolaridade, conforme modelo disponibilizado no Anexo I do
+        manual do Vestibulinho. Caso não apresentem a comprovação necessária, serão desclassificados e 
+        perderão o direito à vaga.</font></p>
+
+        <br><br>
+
+       <p align = "justify"><font size = "5"><b>Instituições Públicas</b></font></p>
+      
+       <br>
+       
+       <p align = "justify"><font size = "4">Para efeito de pontuação acrescida, instituições públicas são 
+        aquelas criadas e mantidas pelo poder público federal, estadual, municipal ou pelo Distrito Federal. 
+        Escolas vinculadas a fundações, cooperativas, ou ao Sistema S (como Sesi, Senai, Sesc, Senac), apesar 
+        de gratuitas, são consideradas particulares devido à sua administração privada.</font></p>
+
+        <br><br>
+
+       <p align = "justify"><font size = "5"><b>Inscrição em Múltiplos Cursos</b></font></p>
+      
+       <br>
+       
+       <p align = "justify"><font size = "4">Os candidatos podem realizar mais de uma inscrição para concorrer 
+        a vagas em diferentes cursos na mesma ETEC ou em outras ETECs/Classes Descentralizadas. Cada inscrição 
+        exige o pagamento de uma nova taxa. Para cada inscrição, é possível indicar um curso em 1ª e 2ª opção 
+        (se disponível).</font></p>
+
+        <br><br>
+
+       <p align = "justify"><font size = "5"><b>Nota Final</b></font></p>
+      
+       <br>
+       
+       <p align = "justify"><font size = "4">Para os cursos de especialização e para o cadastro de reservas de 
+        vagas remanescentes (2º módulo), não se aplica a Pontuação Acrescida. As respostas dos candidatos em 
+        relação ao Sistema de Pontuação Acrescida serão usadas pelo Centro Paula Souza apenas para pesquisa.
+      <br><br>
+      O Vestibulinho da ETEC Ferrucio Humberto Gazzetta é uma excelente oportunidade para aqueles que desejam 
+      ingressar em uma educação técnica de qualidade, beneficiando-se de um processo seletivo justo e acessível
+      a todos.</font></p>
+
+        <br><br><br>
+    </div>
+    </center>
+    <footer class="footer">
+      <a href = "#"><img src = "image/topo.png" id = "ancora"></a>
+        Trabalho Acadêmico sem fins lucrativos <br> Victor Cordeiro e Maria Rodrigues 2024 &copyTodos os direitos reservados
+    </footer>
+
+
+
+    <script>
+      function TrocarTituloCurso(){
+          var adm = document.getElementById("tituloADM")
+          adm.addEventListener("click", function(){
+              document.getElementById("cursos-nome-curso").innerHTML = "Administração"
+              document.getElementById("desc-curso").innerHTML = "eu ser administrativo"
+            })
+
+          var ds = document.getElementById("tituloDS")
+          ds.addEventListener("click", function(){
+            document.getElementById("cursos-nome-curso").innerHTML = "Desenvolvimento de Sistemas"
+            document.getElementById("desc-curso").innerHTML = "Eu faço computaria"
+          })
+
+          var mkt = document.getElementById("tituloMKT")
+          mkt.addEventListener("click", function(){
+            document.getElementById("desc-curso").innerHTML = "Eu ser deveras marketeiro(a)"
+          })
+
+          var rh = document.getElementById("tituloRH")
+          rh.addEventListener("click", function(){
+            document.getElementById("desc-curso").innerHTML = "Recursos Humanos? O que é isso? É de comer?"
+          })
+      }
+    </script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>
